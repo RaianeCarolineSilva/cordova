@@ -1,0 +1,18 @@
+
+body{
+    background-color: rgb(109, 33, 209);
+    padding: 10px;
+    color: rgba(255, 132, 0, 0.85);
+    margin: 5px;
+    border: 5px double;
+    text-align: center;
+ 
+}
+ 
+h1{
+    font-size: 5px;
+    font-weight: bold;
+    font-family:  'Lucida Grande';
+ 
+ 
+}
