@@ -1,14 +1,55 @@
 
 body{
-    background-color: rgb(109, 33, 209);
-    padding: 10px;
-    color: rgba(255, 132, 0, 0.85);
-    margin: 5px;
-    border: 5px double;
-    text-align: center;
- 
+    background-color: #ff0;
+    color: blue;
 }
  
+#layout{
+    display: grid;
+    grid-template-areas:
+    'top'
+    'meio'
+    'footer';
+    grid-template-rows: 150px 150px 150px;
+
+}
+
+#top{
+    grid-area: top;
+    background-color: rgb(228, 48, 17);
+    height: 150px;
+}
+
+
+#meio{
+    grid-area: meio;
+    background-color: rgba(49, 139, 21, 0.884);
+    height: auto;
+    display: grid;
+   
+    
+}
+
+
+#footer{
+    grid-area: footer;
+    background-color: blue;
+    height: 150px;
+
+}
+
+#meio div{
+    text-align: center;
+    margin: 10px auto;
+    width: 50px;
+    background-color: pink;
+}
+
+
+
+
+
+
 h1{
     font-size: 5px;
     font-weight: bold;
