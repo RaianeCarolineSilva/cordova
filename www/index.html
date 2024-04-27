@@ -7,29 +7,72 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
-        <link href="css/estilo.css" href="stylesheet"/>
-        <link href="css/css-bootstrap/bootstrap.css"/>
+       
+        <link href="css/css-bootstrap/bootstrap.css" rel="stylesheet"/>
+        <link href="css/estilo.css" rel="stylesheet"/>
         <title>Venha ser um Marksfelizinhuu</title>
     </head>
     <body>
         <div class="row"> 
             <div clas=" col-sm-12">
-                <label>Cep</label>
-                <input type="text" id="Cep"/>
-                
-
+                <div class="input-group mb-3">
+                    <input id="cep" class="form-control" placeholder="Cep" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button id="botao"class="btn btn-outline-secondary" type="button" id="button-addon2">Botão</button>
+                    </div>
+                  </div>
             </div>
         </div>
 
+            <br></br>
+
             <div class="row">
-            <div class=" col-sm-12">
-                <button id="botao" class="btn btn-primary">
-                    consultar
-                </button>
-
-
+            <div class=" col-xs-12">
+               <label>Endereço</label>
+                <input type="text" id="logradouro"/>
+             
                 </div>
             </div>
+
+            <br></br>
+
+            <div class="row">
+                <div class=" col-xs-12">
+                   <label>Complemento</label>
+                    <input type="text" id="complemento"/>
+                 
+    
+                    </div>
+                </div>
+    
+            <br></br>
+
+                <div class="row">
+                    <div class=" col-xs-12">
+                       <label>Bairro</label>
+                        <input type="text" id="bairro"/>
+                     
+        
+                        </div>
+                    </div>
+        
+            <br></br>
+
+                    <div class="row">
+                        <div class=" col-xs-12">
+                           <label>Localidade</label>
+                            <input type="text" id="localidade"/>
+                         
+            
+                            </div>
+                        </div>
+            
+             <br></br>
+
+
+   
+                
+          
 
             <script src="js/js-bootstrap/bootstrap.bundle.js"></script>
             <script src="js/index.js"></script>
