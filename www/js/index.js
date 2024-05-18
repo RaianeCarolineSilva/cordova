@@ -17,9 +17,6 @@ function consultaCep()
     let campoCelular = document.querySelector("#celular")
     let campoDocumento = document.querySelector("#documento")
 
-
-
-
     campoComplemento.value = objetoCEP.complemento
     campoEndereco.value = objetoCEP.logradouro
     campoBairro.value = objetoCEP.bairro

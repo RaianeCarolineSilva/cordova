@@ -1,162 +1,218 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-       
-        <link href="css/css-bootstrap/bootstrap.css" rel="stylesheet"/>
-        <link href="css/estilo.css" rel="stylesheet"/>
-        <title>maksmaks</title>
-    </head>
-    <body>
-        <div class="row"> 
-            <div clas=" col-sm-12">
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+
+    <link href="css/css-bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/estilo.css" rel="stylesheet" />
     
-                    </div>
-                  </div>
+    <title>maksmaks</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Start of first page -->
+<div data-role="page" id="pag1">
+    <div class="row">
+        <div clas=" col-sm-12">
+            <div class="input-group mb-3">
+                <div class="input-group-append">
+
+                </div>
             </div>
         </div>
+    </div>
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Endereço</label>
+            <input type="text" id="endereço" />
 
-          
+        </div>
+    </div>
 
-            <div class="row">
-            <div class=" col-xs-12">
-               <label>Endereço</label>
-                <input type="text" id="endereço"/>
-             
-                </div>
-            </div>
 
-           
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Complemento</label>
+            <input type="text" id="complemento" />
 
-            <div class="row">
-                <div class=" col-xs-12">
-                   <label>Complemento</label>
-                    <input type="text" id="complemento"/>
-                 
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Bairro</label>
+            <input type="text" id="bairro" />
+
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Localidade</label>
+            <input type="text" id="localidade" />
+
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Nome</label>
+            <input type="text" id="nome" />
+
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Celular</label>
+            <input type="text" id="celular" />
+
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Numero</label>
+            <input type="text" id="numero" />
+
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Cep</label>
+            <input type="text" id="cep" />
+            <button id="botao">Buscar cep</button>
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Estado</label>
+            <input type="text" id="estado" />
+
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Documento</label>
+            <input type="text" id="documento" />
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class=" col-xs-12">
+            <button class="btn btn-success" onclick="enviar()">
+                Salvar Dados
+            </button>
+
+        </div>
+       
+
+    </div>
+    <a href="#ler" class="ui-btn">Ir para pg 02</a>
+	
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="ler">
+    <button class="btn btn-" onclick="lerclientes()">
+        Listar clientes
+    </button>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Celular</th>
+          </tr>
+        </thead>
+        <tbody id="corpotabela"></tbody>
+      </table>
+      <a href="#login" class="ui-btn">Ir para pg 03</a>
+</div><!-- /page -->
+
+<!-- Start of 3º page -->
+<div data-role="page" id="login">
+    <div data-role="header"><h1>Página 3</h1></div>
+    <a href="#cadastro" class="ui-btn ui-shadow ui-corner-all">Login</a>
     
-                    </div>
-                </div>
     
-            
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Login</label>
+            <input type="text" id="log" />
 
-                <div class="row">
-                    <div class=" col-xs-12">
-                       <label>Bairro</label>
-                        <input type="text" id="bairro"/>
-                     
-        
-                        </div>
-                    </div>
-        
-           
-                    <div class="row">
-                        <div class=" col-xs-12">
-                           <label>Localidade</label>
-                            <input type="text" id="localidade"/>
-                         
-            
-                            </div>
-                        </div>
-            
-           
 
-             <div class="row">
-                <div class=" col-xs-12">
-                   <label>Nome</label>
-                    <input type="text" id="nome"/>
-                 
+        </div>
+    </div>
+
     
-                    </div>
-                </div>
-
-                
-
-                <div class="row">
-                    <div class=" col-xs-12">
-                       <label>Celular</label>
-                        <input type="text" id="celular"/>
-                     
-        
-                        </div>
-                    </div>
-
-                  
-
-                    <div class="row">
-                        <div class=" col-xs-12">
-                           <label>Numero</label>
-                            <input type="text" id="numero"/>
-                         
-            
-                            </div>
-                        </div>
+    <div class="row">
+        <div class=" col-xs-12">
+            <label>Senha</label>
+            <input type="password" id="senha" />
 
 
-                        <div class="row">
-                        <div class=" col-xs-12">
-                           <label>Cep</label>
-                            <input type="text" id="cep"/>
-                         
-            
-                            </div>
-                        </div>
+        </div>
+    </div>
 
-                        
+    <button class="btn btn-" onclick="">
+        Login
+    </button>
 
-                        <div class="row">
-                            <div class=" col-xs-12">
-                               <label>Estado</label>
-                                <input type="text" id="estado"/>
-                             
-                
-                                </div>
-                            </div>
-
-                            
-
-                            <div class="row">
-                                <div class=" col-xs-12">
-                                   <label>Documento</label>
-                                    <input type="text" id="documento"/>
-                                 
-                    
-                                    </div>
-                                </div>
-
-                                <br></br>
-
-                                <div class="row">
-                                    <div class=" col-xs-12">
-                                       <button class="btn btn-success" onclick="enviar()">
-                                       Salvar Dados
-                                        </button>
-                        
-                                        </div>
-                                    </div>
-          
-                     <button class="btn btn"onclick="salvarlocal('Nome','Joaquim')">
-                             Cadastrar 
-                      </button>
-                      <br/>
-                      <button class="btn btn-" onclick= "listarclientes()">
-                              Listar clientes  
-                        </button>
+</div><!-- /page -->
 
 
-            <script src="js/js-bootstrap/bootstrap.bundle.js"></script>
-            <script src="js/index.js"></script>
-            <script src="js/cadastroclientes.js"></script>
-            <script src="js/lerclientes.js"></script>
-            <script src="js/armazenar.js"></script>
-            <script src="js/listarclientes.js"></script>
-  
     
-    </body>
+
+
+
+   
+
+
+    <script src="js/js-bootstrap/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cadastroclientes.js"></script>
+    <script src="js/lerclientes.js"></script>
+    <script src="js/armazenar.js"></script>
+
+
+
+</body>
+
 </html>
